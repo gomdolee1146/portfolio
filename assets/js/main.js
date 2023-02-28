@@ -1,3 +1,5 @@
+// 로딩 애니메이션 (Lottie json)
+
 // 섹션별 페이지 스크롤
 var $html = $('html');
 var $paginationDot = $('.pagination__dot')
@@ -29,5 +31,9 @@ var swiper = new Swiper(".portfolio__swiper", {
 });
 
 
-
-
+    // $(".portfolio__slide").mouseenter(function(){
+    //     $(this).children('.portfolio__content, .portfolio__thumb').addClass('on');
+    // });
+    // $(".portfolio__slide").mouseleave(function(){
+    //     $(this).children('.portfolio__content, .portfolio__thumb').removeClass('on');
+    // });

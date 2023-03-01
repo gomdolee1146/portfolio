@@ -238,7 +238,7 @@ section {
 }
 .portfolio__info {
     width: 60%;
-    margin-bottom: 8px;
+    margin: 16px 0;
     color: #fff;
     text-align: justify;
 }
@@ -289,6 +289,12 @@ section {
 .portfolio__badge:last-child {
     margin-right: 0;
 }
+.portfolio__btn_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
 .portfolio__btn {
     display: inline-block;
     margin-top: 8px;
@@ -310,6 +316,43 @@ section {
 }
 
 
-
-
-
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px 0;
+    box-sizing: border-box;
+}
+.skill__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.skill__wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    padding: 16px 0;
+    box-sizing: border-box;
+}
+.skill__box {
+    width: 300px;
+    margin-bottom: 16px;
+}
+.skill__graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.skill__desc {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}

@@ -1,6 +1,8 @@
 // 로딩 애니메이션 (Lottie json)
 
-// 섹션별 페이지 스크롤
+
+
+// 섹션별 페이지 스크롤, pagination 클릭이벤트
 var $html = $('html');
 var $paginationDot = $('.pagination__dot')
 var page = 1;

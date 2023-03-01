@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
 
     <title>PORTFOLIO</title>
@@ -14,14 +15,17 @@
 <body>
     <div class="loading" style="display:none; "></div>
     <div class="wrap">
+        <header class="header">
+            
+        </header>
         <div class="pagination">
-            <div class="pagination__dot active"></div>
-            <div class="pagination__dot"></div>
-            <div class="pagination__dot"></div>
-            <div class="pagination__dot"></div>
+            <a href="#intro" class="pagination__dot active"></a>
+            <a href="#about" class="pagination__dot"></a>
+            <a href="#portfolio" class="pagination__dot"></a>
+            <a href="#skills" class="pagination__dot"></a>
         </div>
-        <section class="intro">
-            <div class="intro__box">
+        <section id="intro" class="intro">
+            <div class="intro__box wow slideInLeft">
                 <h4 class="intro__title">
                     <p class="intro__title_row">
                         <span class="intro__title_txt"><img class="intro__title_img" src="./assets/img/letter_w.png" alt="txt_W" /></span>
@@ -51,7 +55,7 @@
                 <button class="intro__btn-view">view more</button>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about  wow fadeInLeft">
             <div class="about__box">
                 <div class="about__box-l">
                     <img class="about__img" src="./assets/img/img_about.png" />
@@ -62,7 +66,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <h4 class="portfolio__title">Portfolio</h4>
             <div class="portfolio__swiper">
                 <div class="swiper-wrapper portfolio__wrapper">
@@ -79,14 +83,12 @@
                                 <h4 class="portfolio__desc">포트폴리오</h4>
                                 <p class="portfolio__info">
                                     포트폴리오 메인페이지입니다. html, css, javascript, jquery 및 라이브러리를 활용하였습니다. <br />
-
                                 </p>
                                 
                                 <div class="portfoilo__row">
                                     <span class="portfolio__badge">html</span>
                                     <span class="portfolio__badge">css</span>
                                     <span class="portfolio__badge">jquery</span>
-                                    <span class="portfolio__badge">Swiper</span>
                                     <span class="portfolio__badge">responsive</span>
                                 </div>
                                 <div class="portfolio__btn_box">
@@ -97,9 +99,29 @@
                         </div>
                     </div>
                     <div class="swiper-slide portfolio__slide">
-                        <div class="portfolio__content">하이0202</div>
+                        <div class="portfolio__content">
+                            <div class="portfolio__txt">
+                                <p>작업기간 : ?일</p>
+                                <p>UI는 트로스트를 그대로 참고, 일부 에셋은 새로 만들었습니다.<br />퍼블리싱 100%</p>
+                            </div>
+                        </div>
                         <div class="portfolio__thumb">
-                            <img src="./assets/img/sample02.jpg" class="portfolio__img" />
+                            <img src="./assets/img/trost_m.png" class="portfolio__img" />
+                            <div class="portfolio__box">
+                                <h4 class="portfolio__desc">트로스트 클론 코딩</h4>
+                                <p class="portfolio__info">
+                                    트로스트 클론 코딩입니다. Vue.js, scss를 이용하여 만들었습니다. 퍼블리싱에 필요한 dummy데이터를 만들어서 vue.js 문법을 활용하여 만들었습니다.
+                                </p>
+                                <div class="portfoilo__row">
+                                    <span class="portfolio__badge">Vue.js</span>
+                                    <span class="portfolio__badge">scss</span>
+                                    <span class="portfolio__badge">mobile</span>
+                                </div>
+                                <div class="portfolio__btn_box">
+                                    <button class="portfolio__btn">View</button>
+                                    <a class="portfolio__btn" href="https://github.com/ssun1146/vuelogg" target="_blank">Github</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide portfolio__slide">
@@ -129,14 +151,46 @@
                 </div>
             </div>
         </section>
-        <section class="skills"></section>
+        <section id="skills" class="skills">
+            <div class="skill__title">Skills</div>
+            <div class="skill__wrap">
+                <div class="skill__box">
+                    <div class="skill__graph">HTML</div>
+                    <p class="skill__desc">기본에 충실하며 가독성이 좋은 마크업을 짜기 위해 노력합니다.</p>
+                </div>
+                <div class="skill__box">
+                    <div class="skill__graph">css</div>
+                    <p class="skill__desc">중복을 줄이고 효율이 좋은 css를 설계합니다. 반응형 웹 사이트를 적용합니다.</p>
+                </div>
+                <div class="skill__box">
+                    <div class="skill__graph">javascript</div>
+                    <p class="skill__desc">더 나은 인터랙션 효과를 만들기 위해 꾸준히 고민합니다.</p>
+                </div>
+                <div class="skill__box">
+                    <div class="skill__graph">Vue.js</div>
+                    <p class="skill__desc">기본에 충실하며 가독성이 좋은 마크업을 짜기 위해 노력합니다.</p>
+                </div>
+                <div class="skill__box">
+                    <div class="skill__graph">GIT</div>
+                    <p class="skill__desc">소스트리, vscode를 이용하여 GIT을 사용합니다. 여러명이 협업한 코드를 관리합니다.</p>
+                </div>
+                <div class="skill__box">
+                    <div class="skill__graph">Communication</div>
+                    <p class="skill__desc">디자이너의 디자인 의도에 맞게, 개발자의 작업에 도움이 될 수 있게 코드를 작성합니다.</p>
+                </div>
+            </div>
+
+        </section>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js" type="text/javascript"></script>
+    <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
+        new WOW().init();
+        
         var loading = bodymovin.loadAnimation({
             container: document.querySelector('.loading'),
             path:'./json/loading.json', 
